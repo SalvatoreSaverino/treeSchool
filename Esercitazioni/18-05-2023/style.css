@@ -1,0 +1,74 @@
+
+/* General settings */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background:#F5EBEB;
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+/* Nav-bar */
+.menu,
+a,
+button {
+    color:#D5B4B4 ;
+    text-decoration: none;
+}
+
+header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: nowrap;
+    padding:15px 200px;
+    background-color: #867070;
+}
+
+/* Riporto il mio logo a destra  */
+    .img-logo {
+        margin-right: auto;
+        width: 180px;
+    }
+
+.menu {
+    list-style-type: none;
+}
+
+.menu li {
+    display: inline-block;
+    padding: 0 20px;
+}
+
+.menu li a {
+    transition: all .3s ease;
+}
+
+.menu a:hover {
+    color:#E4D0D0 ;
+}
+
+.menu a:visited {
+    color:#D5B4B4 ;
+}
+
+button {
+
+margin-left: 30px;
+padding: 10px 15px;
+background-color:#F5EBEB;
+border: none;
+border-radius: 50px;
+cursor: pointer;
+transition: all .3s ease;
+}
+
+button:hover {
+    background-color: #D5B4B4;
+    color:#F5EBEB ;
+}
