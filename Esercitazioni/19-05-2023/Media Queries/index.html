@@ -1,112 +1,38 @@
 <!DOCTYPE html>
-<html lang="it">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="preconnect" href="https://fonts.gstatic.com">
-        <title>Esempio di lavagna con Post It</title>
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link
-            rel="preconnect"
-            href="https://fonts.gstatic.com"
-            crossorigin="crossorigin">
-        <link
-            href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Noto+Sans:wght@400;800&display=swap"
-            rel="stylesheet">
-        <link rel="stylesheet" href="style.css">
-    </head>
-
-    <body>
-        <header>
-            <img src="./src/tree-600x216.png" alt="tree logo" class="img-logo"/>
-            <nav>
-                <ul class="menu">
-                    <li>
-                        <a href="#">Home</a>
-                    </li>
-                    <li>
-                        <a href="#">About Us</a>
-                    </li>
-                    <li>
-                        <a href="#">Services</a>
-                    </li>
-                    <li>
-                        <a href="#">Blog</a>
-                    </li>
-                </ul>
-            </nav>
-            <button>Click Me!</button>
-        </header>
-
-        <main>
-            <section>
-                <div>
-                    <h2>Task #1</h2>
-                    <p>Creare i postit</p>
-                </div>
-
-                <div>
-                    <h2>Task #2</h2>
-                    <p>Colorarli</p>
-                </div>
-
-                <div>
-                    <h2>Task #3</h2>
-                    <p>Affiancarli</p>
-                </div>
-
-                <div>
-                    <h2>Task #4</h2>
-                    <p>Spaziarli</p>
-                </div>
-
-                <div>
-                    <h2>Task #5</h2>
-                    <p>Ombreggiarli</p>
-                </div>
-
-                <div>
-                    <h2>Task #6</h2>
-                    <p>Ruotarli</p>
-                </div>
-
-                <div>
-                    <h2>Task #7</h2>
-                    <p>Animarli</p>
-                </div>
-
-                <div>
-                    <h2>Task #8</h2>
-                    <p>Testarli</p>
-                </div>
-            </section>
-        </main>
-        <div class="modulo">
-           <h3>Registrati</h3>
-            <form action=""> 
-                
-                <label for="name">Nome :</label>
-                <input type="text" name="name" id="name" placeholder="Inserisci il tuo nome">
-                <label for="surname">Cognome :</label>
-                <input
-                    type="text"
-                    name="surname"
-                    id="surname"
-                    placeholder="Inserisci il tuo cognome">
-                <label for="email">Email :</label>
-                <input
-                    type="email"
-                    name="email"
-                    id="email"
-                    placeholder="Inserisci la tua email">
-                <label for="password">Password :</label>
-                <input
-                    type="password"
-                    name="password"
-                    id="password"
-                    placeholder="Inserisci la tua password">
-            </form>
-            <button class="btn-form" type="submit">Submit</button>
-        </div>
-    </body>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
+    <!-- user-scalable possiamo decidere se consentire all'utente di zoomare la pagina -->
+    <!-- initial-scale imposta il fattore di zoom iniziale (quando la pagina caricata )-->
+    <!-- minimum e maximum scale ci dicono quanto posso zoomare -->
+    <title>breakpoint</title>
+    <style type="text/css">
+        body {background: red;}                   /* mobile first -> smartphone in modalità portrait */
+        @media screen and (min-width: 480px) {      /* smartphone in modalità landscape */
+        body {
+            background: yellow;
+            }
+        }
+        @media screen and (min-width: 768px) {      /* tablet */
+        body {
+            background: green;
+            }
+        }
+        @media screen and (min-width: 1024px) {     /* laptop */
+        body {
+            background: blue;
+            }
+        }
+        @media screen and (min-width: 1200px) {     /* desktop */
+        body {
+            background: black;
+            }
+        }
+    </style>
+</head>
+<body>
+    
+</body>
 </html>
