@@ -1,0 +1,54 @@
+body {
+  margin: 0;
+}
+
+html {
+  font-family: "Helvetica neue", Arial, "sans serif";
+  font-size: 10px;
+  background-color: #ccc;
+}
+
+.card {
+  border: 2px solid black;
+  border-radius: 1.5em;
+  width: 35em;
+  height: 22em;
+  margin: 5em auto;
+  background-color: red;
+}
+
+.card header,
+.card footer {
+  height: 3em;
+  padding: 1em;
+}
+
+.card header h2 {
+  font-weight: bold;
+  font-size: 2em;
+  margin: 0;
+  padding: 0.2em;
+}
+
+.card article {
+  background-color: firebrick;
+  height: 12em;
+}
+
+.card article img {
+  float: right;
+  max-height: 100%;
+}
+
+.card article p {
+  margin: 0;
+  color: #ccc;
+  padding: 1.5em;
+  line-height: 1.2em;
+}
+
+.card footer {
+  font-size: 1.5em;
+  margin: 0;
+  padding: 0.5em;
+}
