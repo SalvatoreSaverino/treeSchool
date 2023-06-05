@@ -1,92 +1,92 @@
-console.log(typeof "ciao");
-console.log(typeof 3);
-console.log(typeof true);
+// console.log(typeof "ciao");
+// console.log(typeof 3);
+// console.log(typeof true);
 
-//array
-const animals = ["dog", "cat", "frog", "bee"];
-const empty = [];
-const shopping = [
-  ["apple", "banana", "kiwi", "pineapple"],
-  ["shoes", "shirt", "trousers"],
-]; //arr dentro arr
+// //array
+// const animals = ["dog", "cat", "frog", "bee"];
+// const empty = [];
+// const shopping = [
+//   ["apple", "banana", "kiwi", "pineapple"],
+//   ["shoes", "shirt", "trousers"],
+// ]; //arr dentro arr
 
-//positioning (elementi partono da zero)
+// //positioning (elementi partono da zero)
 
-console.log(animals[0]);
+// console.log(animals[0]);
 
-//proprietà e metodi utili
+// //proprietà e metodi utili
 
-animals.length; //lunghezza array
-animals.push("bird"); //aggiunge l'elemento in ultima posizione alla lista
-animals.unshift("bear"); //aggiunge l'elemento in prima posizione alla lista
-animals.pop(); //rimuove l'ultimo elemento della lista
-animals.shift(); //rimuove il primo elemento della lista
-animals.concat("shopping"); //concatena all'array
-animals.splice(1, 3); //rimuove permanentemente nella lista gli elementi nelle posizioni indicate tra parentesi
-animals.slice(1, 3); //rimuove gli elementi nelle posizioni indicate tra parentesi ma non modifica la lista di partenza
-animals.includes("dog"); //restituisce un booleano positivo se l'array include l'elemento tra parentesi
-animals.reverse; //inverte l'ordine degli elementi
-animals.join(); //unisce gli elementi e li converte in stringa
-console.log(animals);
+// animals.length; //lunghezza array
+// animals.push("bird"); //aggiunge l'elemento in ultima posizione alla lista
+// animals.unshift("bear"); //aggiunge l'elemento in prima posizione alla lista
+// animals.pop(); //rimuove l'ultimo elemento della lista
+// animals.shift(); //rimuove il primo elemento della lista
+// animals.concat("shopping"); //concatena all'array
+// animals.splice(1, 3); //rimuove permanentemente nella lista gli elementi nelle posizioni indicate tra parentesi
+// animals.slice(1, 3); //rimuove gli elementi nelle posizioni indicate tra parentesi ma non modifica la lista di partenza
+// animals.includes("dog"); //restituisce un booleano positivo se l'array include l'elemento tra parentesi
+// animals.reverse; //inverte l'ordine degli elementi
+// animals.join(); //unisce gli elementi e li converte in stringa
+// console.log(animals);
 
-//object
+// //object
 
-const pers = { name: "Erica", surname: "Candido", age: "25" };
-pers.name; //richiamare un determinato valore attraverso la propria chiave
-// ===
-pers["name"]; //richiamare un determinato valore attraverso la propria chiave
-Object.keys(pers); //visualizzare tutte le chiavi dell'oggetto tra parentesi
-Object.values(pers); //visualizzare tutti i valori dell'oggetto tra parentesi
-pers.hasOwnProperty("age"); //restituisce un booleano positivo se l'oggetto ha tra le chiavi l'elemento tra parentesi
-pers.name = "Elisa";
+// const pers = { name: "Erica", surname: "Candido", age: "25" };
+// pers.name; //richiamare un determinato valore attraverso la propria chiave
+// // ===
+// pers["name"]; //richiamare un determinato valore attraverso la propria chiave
+// Object.keys(pers); //visualizzare tutte le chiavi dell'oggetto tra parentesi
+// Object.values(pers); //visualizzare tutti i valori dell'oggetto tra parentesi
+// pers.hasOwnProperty("age"); //restituisce un booleano positivo se l'oggetto ha tra le chiavi l'elemento tra parentesi
+// pers.name = "Elisa";
 
-//ESERCITAZIONE
+// //ESERCITAZIONE
 
-//1.Scrivi e verifica in console il tipo dei seguenti elementi:
+// //1.Scrivi e verifica in console il tipo dei seguenti elementi:
 
-("products"); //..........stringa
+// ("products"); //..........stringa
 
-("id"); //..........stringa
-1; //..........number
+// ("id"); //..........stringa
+// 1; //..........number
 
-title:`iPhone 9`; //..........stringa
+// title:`iPhone 9`; //..........stringa
 
-("description"); //..........stringa
-("An apple mobile which is nothing like apple"); //..........stringa
+// ("description"); //..........stringa
+// ("An apple mobile which is nothing like apple"); //..........stringa
 
-("price"); //..........stringa    
-("549"); //..........stringa
+// ("price"); //..........stringa    
+// ("549"); //..........stringa
 
-("discountPercentage"); //..........stringa
-12.96; //..........number
+// ("discountPercentage"); //..........stringa
+// 12.96; //..........number
 
-("rating"); //..........stringa
-4.69; //..........number
+// ("rating"); //..........stringa
+// 4.69; //..........number
 
-("stock"); //..........stringa
-94 //..........number
-`brand:Apple`; //..........stringa
-true; //..........boolean
+// ("stock"); //..........stringa
+// 94 //..........number
+// `brand:Apple`; //..........stringa
+// true; //..........boolean
 
-("category"); //..........stringa
-("smartphones"); //..........stringa
+// ("category"); //..........stringa
+// ("smartphones"); //..........stringa
 
-("images"); //..........stringa
-("https://robohash.org/193.35.5.176.png"); //.........stringa
+// ("images"); //..........stringa
+// ("https://robohash.org/193.35.5.176.png"); //.........stringa
 
-//-----------------------------------------------------------------------------//
+// //-----------------------------------------------------------------------------//
 
-//2. Di che tipo è la costante x?
-//.........................................object
-const x = {
-  images: [
-    "https://i.dummyjson.com/data/products/1/1.jpg",
-    "https://i.dummyjson.com/data/products/1/2.jpg",
-    "https://i.dummyjson.com/data/products/1/3.jpg",
-    "https://i.dummyjson.com/data/products/1/4.jpg",
-    "https://i.dummyjson.com/data/products/1/thumbnail.jpg",
-  ],
-};
+// //2. Di che tipo è la costante x?
+// //.........................................object
+// const x = {
+//   images: [
+//     "https://i.dummyjson.com/data/products/1/1.jpg",
+//     "https://i.dummyjson.com/data/products/1/2.jpg",
+//     "https://i.dummyjson.com/data/products/1/3.jpg",
+//     "https://i.dummyjson.com/data/products/1/4.jpg",
+//     "https://i.dummyjson.com/data/products/1/thumbnail.jpg",
+//   ],
+// };
 
 //2.1 Qual è la sua chiave?
 //.............................................images
@@ -98,7 +98,7 @@ const x = {
 
 //3. Di che tipo è la costante images?
 //..............................................Array
-const images = ["image_1", "image_2", "image_3", "image_4", "image_5"];
+// const images = ["image_1", "image_2", "image_3", "image_4", "image_5"];
 
 //3.1 Di che tipo sono i suoi elementi?
 //................................................stringa
@@ -121,49 +121,49 @@ const images = ["image_1", "image_2", "image_3", "image_4", "image_5"];
 //4 Di che tipo è la costante sample?
 //................................................object
 
-const sample = {
-  permission: "ALL",
-  products: [
-    {
-      id: 1,
-      title: "iPhone 9",
-      description: "An apple mobile which is nothing like apple",
-      price: 549,
-      discountPercentage: 12.96,
-      rating: 4.69,
-      stock: 94,
-      brand: "Apple",
-      category: "smartphones",
-      thumbnail: "...",
-      images: [
-        "https://i.dummyjson.com/data/products/1/1.jpg",
-        "https://i.dummyjson.com/data/products/1/2.jpg",
-        "https://i.dummyjson.com/data/products/1/3.jpg",
-        "https://i.dummyjson.com/data/products/1/4.jpg",
-        "https://i.dummyjson.com/data/products/1/thumbnail.jpg",
-      ],
-    },
-    {
-      id: 2,
-      title: "iPhone X",
-      description:
-        "SIM-Free, Model A19211 6.5-inch Super Retina HD display with OLED technology A12 Bionic chip with ...",
-      price: 899,
-      discountPercentage: 17.94,
-      rating: 4.44,
-      stock: 34,
-      brand: "Apple",
-      category: "smartphones",
-      thumbnail: "https://i.dummyjson.com/data/products/2/thumbnail.jpg",
-      images: [
-        "https://i.dummyjson.com/data/products/2/1.jpg",
-        "https://i.dummyjson.com/data/products/2/2.jpg",
-        "https://i.dummyjson.com/data/products/2/3.jpg",
-        "https://i.dummyjson.com/data/products/2/thumbnail.jpg",
-      ],
-    },
-  ],
-};
+// const sample = {
+//   permission: "ALL",
+//   products: [
+//     {
+//       id: 1,
+//       title: "iPhone 9",
+//       description: "An apple mobile which is nothing like apple",
+//       price: 549,
+//       discountPercentage: 12.96,
+//       rating: 4.69,
+//       stock: 94,
+//       brand: "Apple",
+//       category: "smartphones",
+//       thumbnail: "...",
+//       images: [
+//         "https://i.dummyjson.com/data/products/1/1.jpg",
+//         "https://i.dummyjson.com/data/products/1/2.jpg",
+//         "https://i.dummyjson.com/data/products/1/3.jpg",
+//         "https://i.dummyjson.com/data/products/1/4.jpg",
+//         "https://i.dummyjson.com/data/products/1/thumbnail.jpg",
+//       ],
+//     },
+//     {
+//       id: 2,
+//       title: "iPhone X",
+//       description:
+//         "SIM-Free, Model A19211 6.5-inch Super Retina HD display with OLED technology A12 Bionic chip with ...",
+//       price: 899,
+//       discountPercentage: 17.94,
+//       rating: 4.44,
+//       stock: 34,
+//       brand: "Apple",
+//       category: "smartphones",
+//       thumbnail: "https://i.dummyjson.com/data/products/2/thumbnail.jpg",
+//       images: [
+//         "https://i.dummyjson.com/data/products/2/1.jpg",
+//         "https://i.dummyjson.com/data/products/2/2.jpg",
+//         "https://i.dummyjson.com/data/products/2/3.jpg",
+//         "https://i.dummyjson.com/data/products/2/thumbnail.jpg",
+//       ],
+//     },
+//   ],
+// };
 
 //4.1 Qual è la sua chiave o quali sono le sue chiavi? le chiavi sono permission di tipo stringa e products di tipo Array
 
@@ -172,3 +172,44 @@ const sample = {
 //4.3 Scrivi e testa in console un comando che stampi la chiave (o le chiavi) di sample  Object.keys(sample)
 
 //4.4 Scrivi e testa in console un comando che stampi il valore (o valori) di sample   Object.values(sample)
+
+
+//5. Creare un mock.
+//Tutto deve essere inserito dentro un array di nome "mock".
+//Gli oggetti nell'array devono contenere le seguenti chiavi: id, todo, completed, userName
+//Scegliete i valori a piacere, ma con un senso (id->numero, todo->qualcosa da fare, completed->booleano.....)
+//L'array deve contenere almeno 4 oggetti
+
+//Stampare in console il primo oggetto
+//Stampare l'id del secondo oggetto
+//Verificare se la chiave "todo" è presente in un determinato oggetto
+
+const mock = [
+  {
+    id: 1,
+    Todo:["Titolo","Text", true, 1],
+    completed: false,
+    userName:"Abc"
+  },
+  {
+    id: 2,
+    Todo:["Message","Color", false, 2],
+    completed: false,
+    userName:"aBc"
+  },
+  {
+    id: 3,
+    completed: false,
+    userName:"abC"
+  },
+  {
+    id: 4,
+    Todo:["Titolo","Text","Description", false,3],
+    completed: true,
+    userName:"ABC"
+  }
+];
+
+console.log(mock[0]);
+console.log(mock[0].todo[1]);
+console.log(mock[2].hasOwnProperty("todo"));
