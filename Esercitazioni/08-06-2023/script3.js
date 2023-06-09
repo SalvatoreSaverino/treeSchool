@@ -37,13 +37,31 @@ const lastChar = str3.charAt(str3.length-1);
 console.log(firstChar, lastChar);
 
 // Date due stringhe "Roma" e "Catania " sommare le loro lunghezze
+const città1 = "Roma";
+const città2 = "Catania";
+lengthCittàTot = città1.length + città2.length;
+console.log(lengthCittàTot);
 
 // Data la stringa "Pizza" stampare la SOTTOSTRINGA che va dal secondo carattere fino alla fine della stringa
+const cibo = "Pizza";
+console.log(cibo.slice(1));
 
 // Data la stringa "JavaScript mi piace molto" Estrarre la lunghezza della stringa
+const str4 = "JavaScript mi piace molto";
+const str5 = str4.length;
+console.log(str5);
 //  Estrarre l'indice di partenza della sottostringa "mi ...";
+const str6 = str4.indexOf("mi");
+console.log(str6);
 //  Utilizzare i due numeri per calcolare l’area di un rettangolo.
+function areaRett(a,b){
+   const risult = a*b;
+   console.log(risult);
+}
+areaRett(str5,str6);
 
 // Dati tre numeri (a=11;b=3;c=2), trovare il resto della divisione tra le variabili "a" e "b" e stampare se è maggiore o meno della variabile "c". 
+const a = 11;const b = 3;const c = 2;const resto = a % b;
+(resto < c) ? console.log("il resto della divisione è minore di c") : console.log("il resto della divisione è maggiore di c");
 
 // Date due stringhe (Filo e Ponte) sostituire i primi due caratteri della prima stringa con i primi due caratteri della seconda stringa
