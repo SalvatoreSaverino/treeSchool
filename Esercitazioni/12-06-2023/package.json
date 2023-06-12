@@ -1,0 +1,14 @@
+{
+  "name": "manipolazione-dom",
+  "version": "1.0.0",
+  "description": "First attempt to interaction with DOM",
+  "main": "lezione.js",
+  "scripts": {
+    "start": "vite"
+  },
+  "author": "Sam",
+  "license": "ISC",
+  "devDependencies": {
+    "vite": "^4.3.9"
+  }
+}
