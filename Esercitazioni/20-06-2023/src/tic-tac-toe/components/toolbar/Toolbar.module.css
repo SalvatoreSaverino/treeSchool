@@ -1,0 +1,8 @@
+.box {
+    min-height: 79px;
+    width: 100%;
+    background-color: lightcyan;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
