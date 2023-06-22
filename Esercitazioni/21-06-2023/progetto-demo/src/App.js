@@ -2,7 +2,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import MyNavbar from "./pages/myNavbar/MyNavbar";
-import Home from "./pages/Home/Home";
+import Home from "./pages/home/Home";
 import Blogs from "./pages/blogs/Blogs";
 import Contact from "./pages/contact/Contact";
 import NoPage from "./pages/noPage/NoPage";

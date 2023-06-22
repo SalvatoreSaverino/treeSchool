@@ -1,10 +1,10 @@
-import {Container, Nav, Navbar}  from "react-bootstrap";
+import {Container, Nav, Navbar,}  from "react-bootstrap";
 
-// eslint-disable-next-line react/prop-types
-const CustomNavbar = ({brand}) => (
+
+const CustomNavbar = () => (
   <Navbar collapseOnSelect expand="lg" className="bg-body-tertiary">
     <Container>
-      <Navbar.Brand href="#home">Restaurant - {brand} -</Navbar.Brand>
+      <Navbar.Brand href="#home">Restaurant </Navbar.Brand>
       <Navbar.Toggle aria-controls="responsive-navbar-nav" />
       <Navbar.Collapse id="responsive-navbar-nav">
         <Nav className="ms-auto">
