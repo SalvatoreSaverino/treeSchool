@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
+    <title>E-Commerce Demo2</title>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <header>
+      <a href="#" class="logo"><i class="fa-solid fa-shirt"></i>Store</a>
+      <ul class="navbar">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#new">Category</a></li>
+        <li><a href="#product">Products</a></li>
+        <li><a href="#reviews">Reviews</a></li>
+      </ul>
+      <!-- Icons -->
+      <div class="header-icons">
+        <i class="fa-solid fa-bars" id="menu-icon"></i>
+        <i class="fa-solid fa-magnifying-glass" id="search-icon"></i>
+        <i class="fa-solid fa-cart-shopping" id="cart-icon"></i>
+        <i class="fa-solid fa-user" id="user-icon"></i>
+      </div>
+      <!-- Search Box -->
+      <div class="search-box">
+        <input type="search" name="" id="" placeholder="Search Here..." />
+      </div>
+      <!-- Cart Box -->
+      <div class="cart">
+        <!-- Box 1 -->
+        <div class="box">
+          <img src="./assets/img/product1m.avif" alt="" />
+          <div class="text">
+            <h3>Windbreaker</h3>
+            <span>49.99€</span>
+            <span>x2</span>
+          </div>
+          <i class="fa-solid fa-trash"></i>
+        </div>
+        <h2>Total: 99.98€</h2>
+        <a href="" class="btn">Checkout</a>
+      </div>
+      <!-- User -->
+      <div class="user">
+        <h2>Login Now</h2>
+        <input type="email" name="" id="" placeholder="Your Email..." />
+        <input type="password" name="" id="" placeholder="Password" />
+        <input type="submit" value="Login" class="login-btn" />
+        <p>Forget Password ? <a href="#">Reset Now</a></p>
+        <p>Don't have an account yet ? <a href="#">Sign up</a></p>
+      </div>
+    </header>
+    <!-- Home -->
+    <section class="home" id="home">
+      <div class="home-text">
+        <span>Welcome!</span>
+        <h1>New fashion arrivals from <br />current trends</h1>
+        <a href="#" class="btn">Shop Now</a>
+      </div>
+      <div class="home-img">
+        <img src="./assets/img/Banner-img.png" alt="" />
+      </div>
+    </section>
+    <hr />
+    <!-- Select Collection -->
+    <section class="new" id="new">
+      <div class="heading">
+        <h2>Select <span>Category</span></h2>
+      </div>
+      <div class="swiper new-arrival">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide box">
+            <img src="./assets/img/hero-img.avif" alt="" />
+            <div class="content">
+              <a href="#" class="btn">Buy Now</a>
+            </div>
+          </div>
+          <div class="swiper-slide box">
+            <img src="./assets/img/category-man.avif" alt="" />
+            <div class="content">
+              <a href="#man" class="btn">Men's collection</a>
+            </div>
+          </div>
+          <div class="swiper-slide box">
+            <img src="./assets/img/young-pretty-girl.jpg" alt="" />
+            <div class="content">
+              <a href="#women" class="btn">Women's collection</a>
+            </div>
+          </div>
+          <div class="swiper-slide box">
+            <img src="./assets/img/product2b.avif" alt="" />
+            <div class="content">
+              <a href="#baby" class="btn">Baby collection</a>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </section>
+    <hr />
+    <!-- Product -->
+    <section class="product" id="product">
+      <!-- Man -->
+      <div class="heading">
+        <h2>Man's <span>Collection</span></h2>
+      </div>
+      <div class="product-container" id="man">
+        <div class="box">
+          <img src="./assets/img/product1m.avif" alt="" />
+          <div class="content">
+            <h2>Windbreaker</h2>
+            <div class="stars">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star-half-stroke"></i>
+            </div>
+            <span>49.99€</span>
+            <i class="fa-solid fa-cart-shopping"></i>
+          </div>
+        </div>
+        <div class="box">
+          <img src="./assets/img/product3m.avif" alt="" />
+          <div class="content">
+            <h2>Sweatshirt</h2>
+            <div class="stars">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star-half-stroke"></i>
+            </div>
+            <span>59.99€</span>
+            <i class="fa-solid fa-cart-shopping"></i>
+          </div>
+        </div>
+        <div class="box">
+          <img src="./assets/img/product4m.avif" alt="" />
+          <div class="content">
+            <h2>Men's fashion combination v1</h2>
+            <div class="stars">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <span>119.99€</span>
+            <i class="fa-solid fa-cart-shopping"></i>
+          </div>
+        </div>
+        <div class="box">
+          <img src="./assets/img/product6m.avif" alt="" />
+          <div class="content">
+            <h2>Men's fashion combination v2</h2>
+            <div class="stars">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <span>99.99€</span>
+            <i class="fa-solid fa-cart-shopping"></i>
+          </div>
+        </div>
+        <div class="box">
+          <img src="./assets/img/product2m.avif" alt="" />
+          <div class="content">
+            <h2>Man bag</h2>
+            <div class="stars">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <span>86.30€</span>
+            <i class="fa-solid fa-cart-shopping"></i>
+          </div>
+        </div>
+      </div>
+      <!-- Women -->
+      <div class="heading">
+        <h2>Women's <span>Collection</span></h2>
+      </div>
+      <div class="product-container" id="women">
+        <div class="box">
+          <img src="./assets/img/product2d.avif" alt="" />
+          <div class="content">
+            <h2>Bag</h2>
+            <div class="stars">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star-half-stroke"></i>
+            </div>
+            <span>129.99€</span>
+            <i class="fa-solid fa-cart-shopping"></i>
+          </div>
+        </div>
+        <div class="box">
+          <img src="./assets/img/product3d.avif" alt="" />
+          <div class="content">
+            <h2>Women's fashion combinationt v1</h2>
+            <div class="stars">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star-half-stroke"></i>
+            </div>
+            <span>78€</span>
+            <i class="fa-solid fa-cart-shopping"></i>
+          </div>
+        </div>
+        <div class="box">
+          <img src="./assets/img/product4d.avif" alt="" />
+          <div class="content">
+            <h2>Women's fashion combinationt v2</h2>
+            <div class="stars">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <span>62€</span>
+            <i class="fa-solid fa-cart-shopping"></i>
+          </div>
+        </div>
+        <div class="box">
+          <img src="./assets/img/product7d.avif" alt="" />
+          <div class="content">
+            <h2>Denim shoes</h2>
+            <div class="stars">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <span>59.99€</span>
+            <i class="fa-solid fa-cart-shopping"></i>
+          </div>
+        </div>
+        <div class="box">
+          <img src="./assets/img/product8d.avif" alt="" />
+          <div class="content">
+            <h2>Trousers</h2>
+            <div class="stars">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <span>70€</span>
+            <i class="fa-solid fa-cart-shopping"></i>
+          </div>
+        </div>
+      </div>
+      <!-- Baby -->
+      <div class="heading">
+        <h2>Baby<span>Collection</span></h2>
+      </div>
+      <div class="product-container" id="baby">
+        <div class="box">
+          <img src="./assets/img/product3b.avif" alt="" />
+          <div class="content">
+            <h2>Full baby v1</h2>
+            <div class="stars">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star-half-stroke"></i>
+            </div>
+            <span>49.99€</span>
+            <i class="fa-solid fa-cart-shopping"></i>
+          </div>
+        </div>
+        <div class="box">
+          <img src="./assets/img/product4b.avif" alt="" />
+          <div class="content">
+            <h2>Full baby v2</h2>
+            <div class="stars">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star-half-stroke"></i>
+            </div>
+            <span>49.99€</span>
+            <i class="fa-solid fa-cart-shopping"></i>
+          </div>
+        </div>
+        <div class="box">
+          <img src="./assets/img/product5b.avif" alt="" />
+          <div class="content">
+            <h2>Full baby v3</h2>
+            <div class="stars">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <span>49.99€</span>
+            <i class="fa-solid fa-cart-shopping"></i>
+          </div>
+        </div>
+        <div class="box">
+          <img src="./assets/img/product5m.avif" alt="" />
+          <div class="content">
+            <h2>Full baby v4</h2>
+            <div class="stars">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <span>79.99€</span>
+            <i class="fa-solid fa-cart-shopping"></i>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Reviews section -->
+    <section class="reviews" id="reviews">
+      <div class="heading">
+        <h2>Our <span>Customer's</span></h2>
+      </div>
+      <div class="reviews-container">
+        <div class="box">
+          <img src="./assets/img/profile1.avif" alt="" />
+          <div class="stars">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+          </div>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Impedit
+            sit ipsum ratione praesentium vero quibusdam.
+          </p>
+          <h2>Anna J.</h2>
+        </div>
+        <div class="box">
+          <img src="./assets/img/profile5.avif" alt="" />
+          <div class="stars">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star-half-stroke"></i>
+          </div>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Impedit
+            sit ipsum ratione praesentium vero quibusdam.
+          </p>
+          <h2>Melissa C.</h2>
+        </div>
+        <div class="box">
+          <img src="./assets/img/profile2.avif" alt="" />
+          <div class="stars">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star-half-stroke"></i>
+          </div>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Impedit
+            sit ipsum ratione praesentium vero quibusdam.
+          </p>
+          <h2>Tom L.</h2>
+        </div>
+        <div class="box">
+          <img src="./assets/img/profile3.avif" alt="" />
+          <div class="stars">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+          </div>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Impedit
+            sit ipsum ratione praesentium vero quibusdam.
+          </p>
+          <h2>Lauren T.</h2>
+        </div>
+        <div class="box">
+          <img src="./assets/img/profile4.avif" alt="" />
+          <div class="stars">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star-half-stroke"></i>
+          </div>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Impedit
+            sit ipsum ratione praesentium vero quibusdam.
+          </p>
+          <h2>Edgar B.</h2>
+        </div>
+        <div class="box">
+          <img src="./assets/img/profile6.avif" alt="" />
+          <div class="stars">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+          </div>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Impedit
+            sit ipsum ratione praesentium vero quibusdam.
+          </p>
+          <h2>Jenny S.</h2>
+        </div>
+      </div>
+    </section>
+    <hr />
+    <!-- Footer -->
+    <section class="footer">
+      <div class="footer-box">
+        <h2>Store©️</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate
+          accusamus ducimus quasi reprehenderit voluptatibus quis suscipit, sit
+          eaque labore minima molestiae reiciendis? Ipsa consequuntur eveniet
+          blanditiis commodi ut, hic nostrum? Corporis consectetur aperiam
+          quaerat atque repellendus, repudiandae libero adipisci tempora. Nam,
+          rem. Sequi accusantium error neque optio. Blanditiis, quia mollitia.
+        </p>
+        <div class="social">
+          <a href=""><i class="fa-brands fa-facebook"></i></a>
+          <a href=""><i class="fa-brands fa-twitter"></i></a>
+          <a href=""><i class="fa-brands fa-instagram"></i></a>
+          <a href=""><i class="fa-brands fa-tiktok"></i></a>
+        </div>
+      </div>
+      <div class="footer-box">
+        <h3>Support</h3>
+        <ul>
+          <li><a href="">Product</a></li>
+          <li><a href="">Help</a></li>
+          <li><a href="">Return Policy</a></li>
+          <li><a href="">Terms of Use</a></li>
+          <li><a href="">FAQ</a></li>
+        </ul>
+      </div>
+      <div class="footer-box">
+        <h3>Our Branch</h3>
+        <ul>
+          <li><a href="">Cina</a></li>
+          <li><a href="">United States</a></li>
+          <li><a href="">Austalia</a></li>
+          <li><a href="">Turchia</a></li>
+          <li><a href="">France</a></li>
+        </ul>
+      </div>
+      <div class="footer-box">
+        <h3>Payment Methods</h3>
+        <div class="payment">
+          <img src="./assets/img/visa.png" alt="" />
+          <img src="./assets/img/mastercard.jpg" alt="" />
+          <img src="./assets/img/paypal.png" alt="" />
+          <img src="./assets/img/american-express.jpg" alt="" />
+        </div>
+      </div>
+    </section>
+    <div class="copyright">
+      <p>&#169; WebMaster All Right Reserved</p>
+    </div>
+    <!-- JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="./assets/script/main.js"></script>
+  </body>
+</html>

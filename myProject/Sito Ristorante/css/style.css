@@ -1,0 +1,592 @@
+@font-face {
+    font-family: "myfont";
+    src: url(../ufonts.com_tw-cen-mt.ttf) format("truetype");}
+body {
+    font-family: myfont;
+    font-size: 14px;
+    font-weight: 400;
+    box-sizing: border-box;
+}
+h1{
+    /*font weight e family*/
+    font-size: 36px;
+    
+}
+h2{
+    font-size: 24px;
+    font-weight: 500;
+}
+h3 {
+    font-size: 20px;
+    font-weight: 600;
+}
+h4{
+    color: white;
+    z-index: 1;
+    font-size: 36px;
+    text-align: center;
+    padding-bottom: 1.7rem;
+   }
+h5{
+    z-index: 1;
+    font-size: 36px;
+    text-align: center;
+    padding-bottom: 1rem;
+    padding-top: 10vh;
+}
+a{
+    text-decoration: none;
+    color: #000000;
+}
+p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    margin: 0px;
+    color: gray;
+}
+.text_arancione{
+    color: #FF5333;
+    font-size: 45px;
+    font-weight: 600;
+}
+.text_arancione-piccolo{
+    color: #FF5333; 
+    font-weight: 600;
+    font-size: 20px;
+}
+
+/*header CHIARA*/
+
+#immagine-header {
+    background-image: url(../images/header.jpg);
+    height: 80vh;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+
+}
+
+header {
+    background: white;
+    position: absolute;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: flex-end;
+    opacity: 0.8;
+    max-width: 80%;
+    padding: 2rem;
+    left: 10%;
+    right: 10%;
+    top: 65vh;
+}
+
+#immagine-header:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: url("../images/overlay-pattern.png") #000000;
+    opacity: 0.3;
+}
+header > nav > ul > li a:hover {
+    text-decoration: underline 2px #FF5333 ;
+}
+
+nav {
+    display: flex;
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    display: inline;
+    margin: 5px;
+}
+#colla{z-index: 999999;}
+/*slider TOMMASO*/
+.hedingsSlider{
+    margin: 15vh 5vw 5vh 7vw;
+}
+#slideshowwrapper{   
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+}
+
+#slideshow {
+    overflow: hidden;
+    margin-right: 7vw;
+    margin-bottom: 15vh;
+    margin-left:7vw;
+}
+.slide-img{
+    flex: 1;
+    margin-right: 1rem;
+}
+#iconaslider{
+   float: right;
+   color: #9b8d6d;
+   font-size: 120%;
+}
+
+/*center*/
+#center{
+    display: flex;
+    justify-content:center;
+    flex-wrap: nowrap;
+}
+#center_tab{
+    background-color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    padding-top: 10vh;
+    width: 100%;
+}
+#center_tab > div{
+text-align: center;
+}
+#center_tab > div > p, h1{
+padding: 2rem 0;
+text-align: center;
+margin: 0 15%;
+}
+#center_tab > div > p{
+    padding-bottom: 20vh;
+}
+hr{
+    background-color: #CBC4B5;
+    width: 11vw;
+    height: 0.1rem;
+    border: none;
+    z-index: 1;
+}
+/*blog TOMMASO*/
+#blog {
+    padding: 20vh 0;
+    background: url("../images/blog/blog-bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 100%;
+   
+}
+#blog:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: url("../images/overlay-pattern.png") #000000;
+    opacity: 0.3;
+}
+#blog > hr{
+    margin-bottom: 8vh;
+}
+#blog_grid{
+    margin: 0 auto;
+    width: 90%;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+article{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+     background-color: whitesmoke;
+     position: relative;
+}
+.blog-txt{
+    margin-bottom: 0.6rem;
+    height: 100%;
+    flex: 1;
+}
+.blog-txt p{
+    padding: 0 1.7rem;
+}
+.blog-txt hr{
+    margin: 0rem auto 1rem auto;
+    width: 30%;
+}
+.blog-img{
+    flex: 1;
+    overflow: hidden;
+}
+.blog-img img{
+    width: 100%;
+    transition: transform 0.5s ease-in;
+}
+.whiteSquare{
+    content: "";
+    position: absolute;
+    left: 1;
+    bottom: 0;
+    right: 50%;
+    top: 50%;
+    width: 30px;
+    height: 30px;
+    margin-top: -15px;
+    background: whitesmoke;
+    transform: rotate(45deg);
+    margin-right: -15px;
+    z-index: 10;
+}
+.button{
+    display: flex;
+    justify-content: flex-end;
+}
+#blog button{
+    margin-right: 5%;
+    width: 22.5%;
+    padding:2rem;
+    cursor: pointer;
+    z-index: 1;
+    color: white;
+    background-color: #FF5333;
+    border: none;
+}
+#blog button:hover{
+    border: 1px solid #FF5333;
+    background-color: transparent;
+    color: #FF5333;
+}
+/*aggiungere una meta queri per trasformare la tabella ad una colonna su mobile*/
+
+/*menu TOMMASO*/
+#menu{
+    padding-top: 10vh;
+    width: 100%;
+}
+#menu > h3{
+    margin: 15vh 5vw 2vh 5vw;
+}
+.intestazioneMenu{
+    text-align: center;
+}
+.intestazioneMenu p{
+    margin: 10vh 20vw 25vh 20vw;
+}
+#prezziario{
+    margin-top: 10vh;
+}
+.elemrnto_menu{
+   margin: 0 5vw;
+}
+.cibi{
+    display: flex;
+    justify-content: space-between;
+}
+.prezzi{
+    border-bottom: dashed gray 1px;
+    flex: 1;
+    text-align: right;
+    color: rgb(86, 66, 16);
+}
+.elemrnto_menu p{
+   margin: 5vh;
+}
+.elemrnto_menu button{
+    width: 25%;
+    padding:2rem;
+    cursor: pointer;
+    z-index: 1;
+    background-color: whitesmoke;
+    color: #FF5333;
+    border: 1px solid #FF5333;
+    margin-bottom: 10vh;
+}
+.elemrnto_menu button:hover{
+    border: none;
+    background-color: #FF5333;
+    color: white;
+}
+/*pomodoro CHIARA*/
+#pomodoro {
+    padding: 10vh 0vw;
+    background: url(../images/subscribe-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    text-align: center;
+    color: white;
+}
+#pomodoro:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: url("../images/overlay-pattern.png") #000000;
+    opacity: 0.3;
+}
+#div-pomodoro > h4 {
+    font-size: 1.8em;
+}
+#div-pomodoro {
+    margin-bottom: 20px;
+    z-index: 1;
+}
+#subscribe {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    z-index: 1;
+}
+
+#email-sub, 
+#sub-but {
+    border: none;
+
+}
+
+#pomodoro hr {
+    margin-bottom: 20px;
+}
+
+#email-sub {
+    width: 40vw;
+    height: 65px;
+    border: 1px solid gray;
+    background-color: white;
+    opacity: 0.8;
+}
+#sub-but {
+    width: 212px;
+    height: 68px;
+    background-color: rgb(133, 202, 199);
+    color: white;
+}
+
+#sub-but:hover {
+    background-color: rgb(119, 182, 179);
+}
+#div-pomodoro p{
+    color: white;
+}
+/*form CHIARA*/
+#contact-us {
+    padding-top: 10vh;
+    margin: auto 5%;
+    display: flex;
+    flex-flow: column nowrap;
+    flex: 1;
+    text-align: center;
+}
+
+#h3-contact-us {
+    align-self: flex-start;
+    margin: 10px;
+}
+
+.span-contact-us {
+    font-size: 1.3em;
+    font-weight: 700;
+}
+
+#span-contact-us {
+    color:#FF4F02;
+}
+
+#cont-u-hr {
+    width: 200px;
+    background-color: gray;
+    color: gray;
+    height: 2px;
+}
+
+#input-name,
+#input-email {
+    height: 50px;
+    margin: 10px;
+    border: 1px solid rgb(179, 171, 171);
+}
+
+textarea {
+    background: 235px 95px;
+    font-size: 12px;
+    margin: 10px;
+    border: 1px solid rgb(179, 171, 171);
+}
+#input-name,
+#input-email,
+textarea{
+    background-color: white;
+}
+#submit {
+    align-self: flex-end;
+    margin: 10px;
+    width: 35vw;
+    height: 8vh;
+    font-weight: bold;
+    color: white;
+    background-color:#FF5333;
+    font-size: 1em;
+    border: none;
+}
+
+/*footer LUCA*/
+
+#contatti {
+    display: flex;
+    column-gap: 2em;
+    padding: 2em;
+    justify-content: center;
+}
+h3 {
+    margin-bottom: 45px;
+    margin-top: 5vw;
+}
+dl {
+    width: 20vw;
+}
+
+dt {
+    margin-bottom: 15px;
+}
+
+dd {
+    margin-bottom: 30px;
+}
+
+span, dt {
+    color: #FF5333;
+}
+
+i {
+    margin-left: 10px;
+    margin-right: 25px;
+}
+
+i, dd {
+    color: rgb(89, 89, 89);
+}
+
+footer {
+    margin-top: 25px;
+    padding: 25px;
+    background-color: rgb(210, 210, 210);
+    display: flex;
+    justify-content: center;
+}
+
+.imageFooter {
+   display: flex;
+   flex-flow: row wrap;
+   column-gap: 20px;
+}
+
+.icona {
+    display: flex;
+    flex-flow: row nowrap;
+}
+.icone {
+    display: flex;
+    background-color: rgb(186, 186, 186);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 20px;
+    align-items: center;
+}
+
+.Follow > h3 {
+    margin-bottom: 15px;
+}
+
+.icone > i   {
+   color: white;
+}
+.icone:hover {
+    background-color: #FF5333;
+}
+
+@media  screen and (max-width:768px) {
+    #contatti {
+        display: flex;
+        flex-direction: column;
+    }
+    .photo, .Follow, dl {
+        width: 100%;
+    }
+
+
+    #blog_grid{
+        display: flex;
+        flex-direction: column;
+    }
+    #blog_grid article{
+        display: flex;
+        flex-direction: column;
+    }
+    #blog_grid .whiteSquare{display: none;}
+
+    header{/*sostituzione menu hamburger*/
+        flex-wrap: wrap;
+        align-items: center;
+        left: 0%;
+        right: 0%;
+        margin: 0 1rem;
+    }
+    header img{
+        margin-bottom:0.5rem;
+    }
+    #subscribe {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin: 0 1rem;
+    }
+    #email-sub{
+        margin-bottom: 1rem;
+        width: 90vw;
+    }
+}
+
+
+
+
+/*animazioni di ingresso*/
+
+.animazioneIngresso{
+    opacity: 0;
+    transform: translateY(30px);
+    transition: 0.3s;
+    transition-delay: 0.3s;
+}
+
+.animazioneIngressoX{
+    opacity: 0;
+    transform: translateX(-30px);
+    transition: 0.3s;
+    transition-delay: 0.3s;
+}
+
+.visibile{
+    opacity: 1;
+    transform: translate(0px);
+}
+
+/*animazione blog*/
+.blog-img img:hover{
+    transform: rotate(20deg) scale(150%);
+}
